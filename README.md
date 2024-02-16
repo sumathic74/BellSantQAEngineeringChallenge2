@@ -98,11 +98,8 @@ Your primary tasks for this challenge include:
 
 ## Submission Guidelines
 
-1. Create a new branch in your forked repository to work on this challenge.
-
-2. Commit your code and any necessary files related to your testing infrastructure and tests.
-
-3. Create a Pull Request (PR) from your branch to this repository's main branch. Ensure your PR includes a detailed description of your approach, any challenges faced, and any additional features you might have added given more time.
+- Provide a link to your Git repository containing the updated project.
+- Include instructions on how to run any new tests as well as an overview of your approach.
 
 ## Evaluation Criteria
 
