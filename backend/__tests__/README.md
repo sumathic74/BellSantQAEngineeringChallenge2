@@ -23,7 +23,7 @@ I obsered that in case of overlapped ranges (ex: normal [0.2 - 1.0], optimal [0 
 
 ## API testing
 
-## Prerequisites
+### Prerequisites
 
 Before the API tests, make sure following is installed
 - super test (supertest)
