@@ -1,6 +1,6 @@
 # BellSant Machine Health Unit tests
 
-## Unit testing
+## Unit testing (calculate.unittests.ts)
 
 In order to test the calculations, as first step, I went thru the calculation code and got some understanding.
 
@@ -21,7 +21,7 @@ As part of unit testing the application, I have tested the units like machine pa
 
 I obsered that in case of overlapped ranges (ex: normal [0.2 - 1.0], optimal [0 - 0.2]), it is first of normal, abnormal, optimal that is picked. There should be some validation to ensure the data is not overlapped.
 
-## API testing
+## API testing (calculate.apitests.ts)
 
 ### Prerequisites
 
@@ -39,3 +39,4 @@ c) Factory health for a machine with multiple optimal
 d) Factory health for a machine with multiple abnormal
 e) Factory health for 2 machines with multiple normal parts
 f) Factory health for 2 machines (1 machine with normal parts, 1 with outside range)
+g) Factory with no machines

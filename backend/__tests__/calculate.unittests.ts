@@ -89,12 +89,11 @@ describe('calculateMachineHealth', () => {
         ];
         const expectedHealth = 25;
     
-        // Get a result
         const result = calculateMachineHealth(machineName, parts);
         expect(result).toBe(expectedHealth);
     });
 
-    it('calculates machine health correctly', () => {
+    it('calculates machine health correctly for mix and match', () => {
         const machineName: MachineType = MachineType.WeldingRobot;
         const parts = [
           {name: WeldingRobotPart.ErrorRate, value: 0.5},

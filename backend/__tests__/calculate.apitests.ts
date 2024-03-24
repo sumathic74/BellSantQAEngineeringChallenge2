@@ -60,6 +60,14 @@ describe('calculateMachineHealthAsAPI',  () => {
     expect(res.body.factory).toEqual("36.81");
     expect(res.body.machineScores.weldingRobot).toEqual("73.61");
     expect(res.body.machineScores.paintingStation).toEqual("0.00");
-  });   
+  });
+  
+  it('calculates machine health correctly with no machines as API', async () => {
+    const input = '{ "machines": {}}'
+    const res =  await request(baseUrl).post('/machine-health').set('Content-type', 'application/json').send(input)
+
+    expect (res.status).toBe(200)
+    expect(res.body.factory).toEqual("0.00");
+  });  
 
 })
